@@ -85,7 +85,8 @@ body {
 
 .main{
 	position: relative;
-	max-width: 100vh;
+	width: 100vh;
+	max-width: 100vw;
 	z-index: 2;
 }
 
@@ -160,11 +161,13 @@ body {
 	display: inline;
 	font-family: nanum1;
 	font-size: 1.5rem;
+	font-style: bold-italic;
 }
 
 .game-description-text{
 	font-family: nanum1;
 	font-size: 1.5rem;
+	font-style: italic;
 }
 
 
