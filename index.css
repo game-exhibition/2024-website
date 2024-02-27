@@ -235,7 +235,8 @@ hr{
 	flex-wrap: wrap;
 	flex-shrink: 2;
 	gap: 0rem 1rem;
-	width: 30%;
+	width: 35rem;
+	max-width: 100%;
 	z-index: 2;
 }
 
