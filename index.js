@@ -4,13 +4,14 @@ function goRandomLink(links){
 
 
 class Game{
-	constructor(title, author, description, icon, trailer, downloadLinks){
+	constructor(title, author, description, icon, trailer, downloadLinks, flavor){
 		this.title = title;
 		this.author = author;
 		this.description = description;
 		this.icon = icon;
 		this.trailer = trailer;
 		this.downloadLinks = downloadLinks;
+		this.flavor = flavor;
 	}
 
 	generateSquare(id){
@@ -32,7 +33,7 @@ class Game{
 					<hr>
 					<iframe class="trailer" src="${this.trailer}"></iframe>
 					<p class="game-description-text">${this.description}</p>
-					<input class="download-button" type="button" value="다운로드" onclick="goRandomLink(games[${id}].downloadLinks);">
+					<input class="download-button" type="button" value="다운로드" title="${this.flavor}" onclick="goRandomLink(games[${id}].downloadLinks);">
 				</div>
 			</div>
 		`;
@@ -40,13 +41,13 @@ class Game{
 }
 
 const games = [
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
-	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com']),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
+	new Game('Weaponry', '이시형', 'Never gonna give you up!', 'weaponry-poster.png', 'https://www.youtube.com/embed/nRYf2IUDnHI?si=quZCa3SmNA93YpaO', ['https://xkcd.com'], "뭐든지!"),
 ];
 
 function create(games){
