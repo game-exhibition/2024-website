@@ -18,7 +18,7 @@ class Game{
 		return `
 			<div class="game-square">
 				<a href="#game${id}">
-					<img class="game-square-image" src="${this.icon}"/>
+					<img class="game-square-image" src="games/${this.icon}"/>
 				</a>
 			</div>
 		`;
