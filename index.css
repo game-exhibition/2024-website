@@ -155,19 +155,19 @@ body {
 .game-description-title{
 	display: inline;
 	font-family: nanum2;
+	font-style: italic;
 }
 
 .game-description-author{
 	display: inline;
 	font-family: nanum1;
 	font-size: 1.5rem;
-	font-style: bold-italic;
+	font-style: italic;
 }
 
 .game-description-text{
 	font-family: nanum1;
 	font-size: 1.5rem;
-	font-style: italic;
 }
 
 
