@@ -32,8 +32,8 @@ html {
 
 body {
 	position: relative;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 .contentparent{
@@ -147,7 +147,7 @@ body {
 	border-style: solid;
 	border-width: var(--main-border-width);
 	height: 100%;
-	padding: 20px;
+	padding: 1em;
 	overflow: hidden;
 }
 
@@ -169,12 +169,12 @@ body {
 
 
 img{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 p{
-	margin: 0px;
+	margin: 0;
 }
 
 hr{
@@ -192,7 +192,7 @@ hr{
 	border-color: black;
 	border-width: var(--main-border-width);
 	border-style: solid;
-	margin-left: 40px;
+	margin-left: 40;
 	border-radius: 0.5em;
 }
 
