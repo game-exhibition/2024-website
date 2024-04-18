@@ -66,7 +66,7 @@ const games = [
 		 '트라우마 치료를 원하던 필립은 자신의 무의식 속으로 들어간다.',
 		 'trigger.jpg',
 		 'https://www.youtube.com/embed/DDMbHJ7jCOc',
-		 ['https://kah-game-exhibition-2024.itch.io/trigger'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/trigger.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Forestale',
@@ -74,7 +74,7 @@ const games = [
 		 '지금, 거목의 마지막 힘으로 태어난 자손의 박동이 시작된다. 이 이야기는 그가 처음이자 마지막으로 뿌리내리는 이야기이다.',
 		 'forestale.png',
 		 'https://www.youtube.com/embed/W8TXLs0tJ5k',
-		 ['https://kah-game-exhibition-2024.itch.io/forestale'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/forestale.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Vier : Alter Code',
@@ -82,7 +82,7 @@ const games = [
 		 '이 세계의 이상현상을 연구중인 연구소에서 탈출한 주인공. 과연 그는 복수를 해낼 수 있을까?',
 		 'vier-alter-code.png',
 		 'https://www.youtube.com/embed/6QciTixYj7I',
-		 ['https://kah-game-exhibition-2024.itch.io/vier-alter-code'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('파란 우주선',
@@ -90,7 +90,7 @@ const games = [
 		 '비상! 우주선에 스파이가 있다!! 뭐? 기생충이 없어졌다고? 기생충 찾아! 백신 꽂아! 스파이 찾아! 우주선에서 내보내버려!',
 		 'troublues-ship.png',
 		 'https://www.youtube.com/embed/VbyR4QYwapg',
-		 ['https://kah-game-exhibition-2024.itch.io/troublues-ship'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('리듬테라피',
@@ -98,7 +98,7 @@ const games = [
 		 '음약을 연주하며 마음을 치유해보자!',
 		 'rhythm-therapy.png',
 		 'https://www.youtube.com/embed/AGhzyTl7W0o',
-		 ['https://kah-game-exhibition-2024.itch.io/rhythm-therapy'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/rhythm-therapy.zip'],
 		 '게임 다운로드'),
 	
 	new Game('FLORADO',
@@ -114,7 +114,7 @@ const games = [
 		 '우승자 제외 분쇄',
 		 'noidi.png',
 		 'https://www.youtube.com/embed/7-784zpqXxw',
-		 ['https://kah-game-exhibition-2024.itch.io/noidi'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/noidi.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Dormitory 2',
@@ -122,7 +122,7 @@ const games = [
 		 '작화실에서 깜빡 잠이 들었다! 어둠이 깔린 한애고에서 탈출하자.',
 		 'dormitory-2.png',
 		 'https://www.youtube.com/embed/itkyap35V2E',
-		 ['https://kah-game-exhibition-2024.itch.io/dormitory2'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/dormitory2.zip'],
 		 '게임 다운로드'),
 	
 	new Game('CG Fighter 23',
@@ -130,7 +130,7 @@ const games = [
 		 '권투 특성화고등학교가 되어버린 한애고?! 컴게과 학생들을 골라 싸움을 붙여보자. 본격 인권 유린 격투게임!',
 		 'cg-fighter-23.png',
 		 'https://www.youtube.com/embed/O8CAO46S1ug',
-		 ['https://kah-game-exhibition-2024.itch.io/cg-fighter-23'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cg-fighter-23.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Cat Village',
@@ -138,15 +138,15 @@ const games = [
 		 '위대한 고양이들의 귀여운 여정!',
 		 'cat-village.png',
 		 'https://www.youtube.com/embed/hQcItLCmloM',
-		 ['https://kah-game-exhibition-2024.itch.io/cat-village'],
-		 '게임 다운로드'),
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cat-village.apk'],
+		 '게임 다운로드(모바일 전용)'),
 	
 	new Game('초능력자를 키우는 완벽한 방법',
 		 '허지하, 김수연, 김아진, 최다연, 허유진, 윤다희, 이효린',
 		 '어느날 초능력자 아기를 주웠다... 오늘부터 내가 보호자라고? 내가 너를 키워야 한다고? 내가 이 아이를 20살까지 키울 수 있을까?',
 		 'perfect-superhuman-babysitting-method.png',
 		 'https://www.youtube.com/embed/okDtL9RGD_s',
-		 ['https://kah-game-exhibition-2024.itch.io/perfect-superhuman-babysitting-method'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('GS-24',
@@ -154,7 +154,7 @@ const games = [
 		 '싱글벙글 1학년들의 미니게임 대잔치! 미니게임 편의점 GS-24에 어서오세요!',
 		 'gs-24.png',
 		 'https://www.youtube.com/embed/P6Xiv89DWT0',
-		 ['https://kah-game-exhibition-2024.itch.io/gs-24'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/gs-24.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Cave Escape',
@@ -162,7 +162,7 @@ const games = [
 		 '엄청난 가치의 보물이 숨겨져 있다는 악명높은 동굴. 그 동굴을 탐험하기 위한 전설적인 두 모험가의 여정이 시작된다!',
 		 'cave-escape.png',
 		 'https://www.youtube.com/embed/d7wXDVqt97I',
-		 ['https://kah-game-exhibition-2024.itch.io/cave-escape'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cave-escape.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Keep The Dragon',
@@ -170,7 +170,7 @@ const games = [
 		 '청룡이 되고 싶어 1000년동안 기다린 이무기는 드디어 청룡이 되기 위한 여정을 떠난다.',
 		 'keep-the-dragon.png',
 		 'https://www.youtube.com/embed/gKKyIR63JpY',
-		 ['https://kah-game-exhibition-2024.itch.io/keep-the-dragon'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/keep-the-dragon.zip'],
 		 '게임 다운로드'),
 	
 	new Game('스플래시',
@@ -178,7 +178,7 @@ const games = [
 		 '유전자 조작으로 태어난 스플래시의 탈출을 저지하고 성장시켜라!',
 		 'splash.png',
 		 'https://www.youtube.com/embed/YLpaARigBko',
-		 ['https://kah-game-exhibition-2024.itch.io/splash'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/splash.zip'],
 		 '게임 다운로드'),
 	
 	new Game('KEEP THE SCREEN',
@@ -186,7 +186,7 @@ const games = [
 		 '네모의 짱친 람쥐썬더가 사라졌다?!! 사라진 람쥐썬더를 구하러 네모는 모험을 떠난다!',
 		 'keep-the-screen.png',
 		 'https://www.youtube.com/embed/XE-v2S7gUtA',
-		 ['https://kah-game-exhibition-2024.itch.io/keep-the-screen'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/keep-the-screen.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Potato',
@@ -194,7 +194,7 @@ const games = [
 		 '이상한 방에서 깨어난 안네/캐샤. 어딘가 익숙한 느낌을 받은 두 사람은 다가오는 위화감에 직면한다.',
 		 'potato.png',
 		 'https://www.youtube.com/embed/9mo-sDMiGGc',
-		 ['https://kah-game-exhibition-2024.itch.io/potato'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/potato.zip'],
 		 '게임 다운로드'),
 	
 	new Game('Candy Sugar Candy',
@@ -202,7 +202,7 @@ const games = [
 		 '평화로운 설탕의 세계, 갑자기 나타난 상사가 사탕이란 걸 만들어보라 합니다.',
 		 'candy-sugar-candy.png',
 		 'https://www.youtube.com/embed/Mbg_J9OrSXo',
-		 ['https://kah-game-exhibition-2024.itch.io/candy-sugar-candy'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/candy-sugar-candy.zip'],
 		 '게임 다운로드'),
 	
 	new Game('비밀보장',
@@ -210,7 +210,7 @@ const games = [
 		 '사람의 마음을 보는 심리 상담사.',
 		 'privacy-guaranteed.png',
 		 'https://www.youtube.com/embed/n4X1G-Ofsuk',
-		 ['https://kah-game-exhibition-2024.itch.io/privacy-guaranteed'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/privacy-guaranteed.zip'],
 		 '게임 다운로드'),
 	
 	new Game('기적재정의론',
@@ -218,7 +218,7 @@ const games = [
 		 '마법세계에 소환당한 해로. 마법에 재능이 없지만 최고의 마법사를 꿈꾸는 카문을 도와 해로는 원래의 세계에 돌아갈 수 있을까?',
 		 'redefining-miracle.png',
 		 'https://www.youtube.com/embed/xS1THKPBbjE',
-		 ['https://kah-game-exhibition-2024.itch.io/redefining-miracle'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/redefining-miracle.zip'],
 		 '게임 다운로드'),
 ];
 
