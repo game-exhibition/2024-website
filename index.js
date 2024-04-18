@@ -1,10 +1,11 @@
-function goRandomLink(links){
-	window.location.href = links[Math.floor(Math.random() * links.length)];
+function goLink(link){
+	window.location.href = link;
 }
 
 
 class Game{
-	constructor(title, author, description, icon, trailer, postmortem, downloadLinks, flavor){
+	constructor(title, author, description, icon, trailer, postmortem, downloadLinks, downloadButtons, flavor){
+		console.log(title);
 		this.title = title;
 		this.author = author;
 		this.description = description;
@@ -12,6 +13,7 @@ class Game{
 		this.trailer = trailer;
 		this.postmortem = postmortem;
 		this.downloadLinks = downloadLinks;
+		this.downloadButtons = downloadButtons;
 		this.flavor = flavor;
 	}
 
@@ -46,12 +48,20 @@ class Game{
         webkitallowfullscreen="webkitallowfullscreen"></iframe>
 					</div>`;
 
+		string += `<div class="downloads">`
 		
 		if(this.downloadLinks.length == 0){
 			string += `<input class="booth-only-button" type="button" value="부스 플레이 전용" title="${this.flavor}">`;
 		} else {
-			string += `<input class="download-button" type="button" value="다운로드" title="${this.flavor}" onclick="goRandomLink(games[${id}].downloadLinks);">`;
+			for(let i = 0; i < this.downloadLinks.length; i++){
+				let downloadTitle = "다운로드"
+				if(games[id].downloadButtons[i] != undefined){
+					downloadTitle = games[id].downloadButtons[i];
+				}
+				string += `<input class="download-button" type="button" value="${downloadTitle}" title="${this.flavor}" onclick="goLink(games[${id}].downloadLinks[${i}]);">`;
+			}
 		}
+		string += `</div>`
 		string += `
 				</div>
 			</div>
@@ -60,7 +70,7 @@ class Game{
 	}
 }
 // 게임 이름, 제작자, 게임 장문 설명, 1:1 웹 호환 1mb 미만 포스터 파일, 플레이버 텍스트
-// Should've used JSON for this.
+// Should've used JSON for this. Spaghetti incoming.
 
 const games = [
 	new Game('TRIGGER',
@@ -70,6 +80,7 @@ const games = [
 		 'https://www.youtube.com/embed/DDMbHJ7jCOc',
 		 'https://www.youtube.com/embed/HI336y8id-U',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/trigger.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Forestale',
@@ -79,6 +90,7 @@ const games = [
 		 'https://www.youtube.com/embed/W8TXLs0tJ5k',
 		 'https://www.youtube.com/embed/DHMI1ODb4RQ',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/forestale.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Vier : Alter Code',
@@ -87,6 +99,7 @@ const games = [
 		 'vier-alter-code.png',
 		 'https://www.youtube.com/embed/6QciTixYj7I',
 		 'https://www.youtube.com/embed/sKx-0RI8QkU',
+		 [''],
 		 [],
 		 '게임 다운로드'),
 	
@@ -96,7 +109,8 @@ const games = [
 		 'troublues-ship.png',
 		 'https://www.youtube.com/embed/VbyR4QYwapg',
 		 'https://www.youtube.com/embed/BpFrNGrvoY4',
-		 [],
+		 ['', ''],
+		 ['Windows 다운로드', '안드로이드 다운로드'],
 		 '게임 다운로드'),
 	
 	new Game('리듬테라피',
@@ -106,6 +120,7 @@ const games = [
 		 'https://www.youtube.com/embed/AGhzyTl7W0o',
 		 'https://www.youtube.com/embed/_yqRBf5Cg8w',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/rhythm-therapy.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('FLORADO',
@@ -114,6 +129,7 @@ const games = [
 		 'florado.jpg',
 		 'https://www.youtube.com/embed/olwl3M8zKUo',
 		 'https://www.youtube.com/embed/J3PWJ3ItD4o',
+		 [],
 		 [],
 		 "부스로 가서 플레이"),
 	
@@ -124,6 +140,7 @@ const games = [
 		 'https://www.youtube.com/embed/7-784zpqXxw',
 		 'https://www.youtube.com/embed/7QIoSOP624E',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/noidi.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Dormitory 2',
@@ -133,6 +150,7 @@ const games = [
 		 'https://www.youtube.com/embed/itkyap35V2E',
 		 'https://www.youtube.com/embed/Y8TXAmG_txk',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/dormitory2.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('CG Fighter 23',
@@ -142,6 +160,7 @@ const games = [
 		 'https://www.youtube.com/embed/O8CAO46S1ug',
 		 'https://www.youtube.com/embed/KZWzzPM2fd4',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cg-fighter-23.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Cat Village',
@@ -151,6 +170,7 @@ const games = [
 		 'https://www.youtube.com/embed/hQcItLCmloM',
 		 'https://www.youtube.com/embed/j63mQSwXo1I',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cat-village.apk'],
+		 [],
 		 '게임 다운로드(모바일 전용)'),
 	
 	new Game('초능력자를 키우는 완벽한 방법',
@@ -159,6 +179,7 @@ const games = [
 		 'perfect-superhuman-babysitting-method.png',
 		 'https://www.youtube.com/embed/okDtL9RGD_s',
 		 'https://www.youtube.com/embed/dxAMfU3wtEI',
+		 [''],
 		 [],
 		 '게임 다운로드'),
 	
@@ -169,6 +190,7 @@ const games = [
 		 'https://www.youtube.com/embed/P6Xiv89DWT0',
 		 'https://www.youtube.com/embed/lca9CfppanE',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/gs-24.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Cave Escape',
@@ -178,6 +200,7 @@ const games = [
 		 'https://www.youtube.com/embed/d7wXDVqt97I',
 		 'https://www.youtube.com/embed/LbJ5SKGIv-A',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cave-escape.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Keep The Dragon',
@@ -187,6 +210,7 @@ const games = [
 		 'https://www.youtube.com/embed/gKKyIR63JpY',
 		 'https://www.youtube.com/embed/36VvPdfCNKQ',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/keep-the-dragon.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('스플래시',
@@ -196,6 +220,7 @@ const games = [
 		 'https://www.youtube.com/embed/YLpaARigBko',
 		 'https://www.youtube.com/embed/_59OPqAe914',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/splash.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('KEEP THE SCREEN',
@@ -205,6 +230,7 @@ const games = [
 		 'https://www.youtube.com/embed/XE-v2S7gUtA',
 		 'https://www.youtube.com/embed/4CH92DaYZTU',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/keep-the-screen.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Potato',
@@ -214,6 +240,7 @@ const games = [
 		 'https://www.youtube.com/embed/9mo-sDMiGGc',
 		 'https://www.youtube.com/embed/2wMOxsA2Q6E',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/potato.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('Candy Sugar Candy',
@@ -223,6 +250,7 @@ const games = [
 		 'https://www.youtube.com/embed/Mbg_J9OrSXo',
 		 'https://www.youtube.com/embed/y_Av1WPmGnw',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/candy-sugar-candy.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('비밀보장',
@@ -232,6 +260,7 @@ const games = [
 		 'https://www.youtube.com/embed/n4X1G-Ofsuk',
 		 'https://www.youtube.com/embed/6qXB29KF74Y',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/privacy-guaranteed.zip'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('기적재정의론',
@@ -241,6 +270,7 @@ const games = [
 		 'https://www.youtube.com/embed/xS1THKPBbjE',
 		 'https://www.youtube.com/embed/0gcI_CWK_kk',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/redefining-miracle.zip'],
+		 [],
 		 '게임 다운로드'),
 ];
 

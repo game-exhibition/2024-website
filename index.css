@@ -205,13 +205,11 @@ hr{
 
 .download-button{
 	font-size: 2rem;
-	position: absolute;
 	background: #00a7ff;
-	bottom: 2rem;
 	font-family: nanum2;
 	color: white;
-	padding: 0.3rem 1rem 0.3rem 1rem;
 	border: var(--main-border-width) black solid;
+	padding: 0.3rem 1rem 0.3rem 1rem;
 	border-radius: 1rem;
 	text-decoration: none;
 	transition: all 0.1s;
@@ -219,9 +217,7 @@ hr{
 
 .booth-only-button{
 	font-size: 2rem;
-	position: absolute;
 	background: #ff2370;
-	bottom: 2rem;
 	font-family: nanum2;
 	color: black;
 	padding: 0.3rem 1rem 0.3rem 1rem;
@@ -288,4 +284,11 @@ hr{
 	z-index: 2;
 	bottom: 0;
 	height: auto;
+}
+
+.downloads{
+	display: flex;
+	position: absolute;
+	bottom: 2rem;
+	gap: 1rem;
 }
