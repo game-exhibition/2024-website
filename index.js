@@ -99,7 +99,7 @@ const games = [
 		 'vier-alter-code.png',
 		 'https://www.youtube.com/embed/6QciTixYj7I',
 		 'https://www.youtube.com/embed/sKx-0RI8QkU',
-		 [''],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/vier-alter-code.zip'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -109,8 +109,8 @@ const games = [
 		 'troublues-ship.png',
 		 'https://www.youtube.com/embed/VbyR4QYwapg',
 		 'https://www.youtube.com/embed/BpFrNGrvoY4',
-		 ['', ''],
-		 ['Windows 다운로드', '안드로이드 다운로드'],
+		 ['https://github.com/game-exhibition/2024-games/releases/download/a/troublues-ship.zip', 'https://github.com/game-exhibition/2024-games/releases/download/a/troublues-ship.apk'],
+		 ['다운로드(Windows)', '다운로드(Android)'],
 		 '게임 다운로드'),
 	
 	new Game('리듬테라피',
@@ -170,8 +170,8 @@ const games = [
 		 'https://www.youtube.com/embed/hQcItLCmloM',
 		 'https://www.youtube.com/embed/j63mQSwXo1I',
 		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cat-village.apk'],
-		 [],
-		 '게임 다운로드(모바일 전용)'),
+		 ['다운로드(Android)'],
+		 '게임 다운로드'),
 	
 	new Game('초능력자를 키우는 완벽한 방법',
 		 '허지하, 김수연, 김아진, 최다연, 허유진, 윤다희, 이효린',
@@ -179,9 +179,9 @@ const games = [
 		 'perfect-superhuman-babysitting-method.png',
 		 'https://www.youtube.com/embed/okDtL9RGD_s',
 		 'https://www.youtube.com/embed/dxAMfU3wtEI',
-		 [''],
 		 [],
-		 '게임 다운로드'),
+		 [],
+		 '부스로 가서 플레이'),
 	
 	new Game('GS-24',
 		 '박태환, 이도현, 박성현, 민지명, 구원, 허지하, 홍기웅, 우세람, 민혜은, 정민재, 윤다희, 예은우, 이효린',
