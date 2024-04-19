@@ -145,7 +145,7 @@ const games = [
 	
 	new Game('Dormitory 2',
 		 '변석영, 이병훈',
-		 '작화실에서 깜빡 잠이 들었다! 어둠이 깔린 한애고에서 탈출하자.',
+		 '작화실에서 깜빡 잠이 들었다! 어둠이 깔린 한애고에서 탈출하자.<br><b>실행이 되지 않는다면 <a href="https://learn.microsoft.com/ko-kr/cpp/windows/latest-supported-vc-redist?view=msvc-170">Microsoft Visual C++ Redistributable</a>의 설치가 필요할 수 있습니다.</b>',
 		 'dormitory-2.png',
 		 'https://www.youtube.com/embed/itkyap35V2E',
 		 'https://www.youtube.com/embed/Y8TXAmG_txk',
