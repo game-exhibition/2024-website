@@ -51,7 +51,7 @@ class Game{
 		string += `<div class="downloads">`
 		
 		if(this.downloadLinks.length == 0){
-			string += `<input class="booth-only-button" type="button" value="부스 플레이 전용" title="${this.flavor}">`;
+			string += `<input class="booth-only-button" type="button" value="게임 파일 제공 불가" title="${this.flavor}">`;
 		} else {
 			for(let i = 0; i < this.downloadLinks.length; i++){
 				let downloadTitle = "다운로드"
@@ -79,7 +79,7 @@ const games = [
 		 'trigger.jpg',
 		 'https://www.youtube.com/embed/DDMbHJ7jCOc',
 		 'https://www.youtube.com/embed/HI336y8id-U',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/trigger.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/trigger'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -89,7 +89,7 @@ const games = [
 		 'forestale.png',
 		 'https://www.youtube.com/embed/W8TXLs0tJ5k',
 		 'https://www.youtube.com/embed/DHMI1ODb4RQ',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/forestale.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/forestale'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -99,7 +99,7 @@ const games = [
 		 'vier-alter-code.png',
 		 'https://www.youtube.com/embed/6QciTixYj7I',
 		 'https://www.youtube.com/embed/sKx-0RI8QkU',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/vier-alter-code.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/vier-alter-code'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -109,8 +109,8 @@ const games = [
 		 'troublues-ship.png',
 		 'https://www.youtube.com/embed/VbyR4QYwapg',
 		 'https://www.youtube.com/embed/BpFrNGrvoY4',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/troublues-ship.zip', 'https://github.com/game-exhibition/2024-games/releases/download/a/troublues-ship.apk'],
-		 ['다운로드(Windows)', '다운로드(Android)'],
+		 ['https://kah-game-exhibition-2024.itch.io/troublues-ship'],
+		 ['다운로드'],
 		 '게임 다운로드'),
 	
 	new Game('리듬테라피',
@@ -119,7 +119,7 @@ const games = [
 		 'rhythm-therapy.png',
 		 'https://www.youtube.com/embed/AGhzyTl7W0o',
 		 'https://www.youtube.com/embed/_yqRBf5Cg8w',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/rhythm-therapy.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/rhythm-therapy'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -131,7 +131,7 @@ const games = [
 		 'https://www.youtube.com/embed/J3PWJ3ItD4o',
 		 [],
 		 [],
-		 "부스로 가서 플레이"),
+		 "부스전용 게임"),
 	
 	new Game('Noidi',
 		 '양유빈, 김민수, 임승현, 최우주',
@@ -139,7 +139,7 @@ const games = [
 		 'noidi.png',
 		 'https://www.youtube.com/embed/7-784zpqXxw',
 		 'https://www.youtube.com/embed/7QIoSOP624E',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/noidi.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/noidi'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -149,7 +149,7 @@ const games = [
 		 'dormitory-2.png',
 		 'https://www.youtube.com/embed/itkyap35V2E',
 		 'https://www.youtube.com/embed/Y8TXAmG_txk',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/dormitory2.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/dormitory2'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -159,7 +159,7 @@ const games = [
 		 'cg-fighter-23.png',
 		 'https://www.youtube.com/embed/O8CAO46S1ug',
 		 'https://www.youtube.com/embed/KZWzzPM2fd4',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cg-fighter-23.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/cg-fighter-23'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -169,8 +169,8 @@ const games = [
 		 'cat-village.png',
 		 'https://www.youtube.com/embed/hQcItLCmloM',
 		 'https://www.youtube.com/embed/j63mQSwXo1I',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cat-village.apk'],
-		 ['다운로드(Android)'],
+		 ['https://kah-game-exhibition-2024.itch.io/cat-village'],
+		 ['다운로드'],
 		 '게임 다운로드'),
 	
 	new Game('초능력자를 키우는 완벽한 방법',
@@ -181,7 +181,7 @@ const games = [
 		 'https://www.youtube.com/embed/dxAMfU3wtEI',
 		 [],
 		 [],
-		 '부스로 가서 플레이'),
+		 '부스전용 게임'),
 	
 	new Game('GS-24',
 		 '박태환, 이도현, 박성현, 민지명, 구원, 허지하, 홍기웅, 우세람, 민혜은, 정민재, 윤다희, 예은우, 이효린',
@@ -189,7 +189,7 @@ const games = [
 		 'gs-24.png',
 		 'https://www.youtube.com/embed/P6Xiv89DWT0',
 		 'https://www.youtube.com/embed/lca9CfppanE',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/gs-24.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/gs-24'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -199,7 +199,7 @@ const games = [
 		 'cave-escape.png',
 		 'https://www.youtube.com/embed/d7wXDVqt97I',
 		 'https://www.youtube.com/embed/LbJ5SKGIv-A',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/cave-escape.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/cave-escape'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -209,7 +209,7 @@ const games = [
 		 'keep-the-dragon.png',
 		 'https://www.youtube.com/embed/gKKyIR63JpY',
 		 'https://www.youtube.com/embed/36VvPdfCNKQ',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/keep-the-dragon.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/keep-the-dragon'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -219,7 +219,7 @@ const games = [
 		 'splash.png',
 		 'https://www.youtube.com/embed/YLpaARigBko',
 		 'https://www.youtube.com/embed/_59OPqAe914',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/splash.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/splash'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -229,9 +229,9 @@ const games = [
 		 'keep-the-screen.png',
 		 'https://www.youtube.com/embed/XE-v2S7gUtA',
 		 'https://www.youtube.com/embed/4CH92DaYZTU',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/keep-the-screen.zip'],
 		 [],
-		 '게임 다운로드'),
+		 [],
+		 '스팀 출시 고려중'),
 	
 	new Game('Potato',
 		 '김예린',
@@ -239,7 +239,7 @@ const games = [
 		 'potato.png',
 		 'https://www.youtube.com/embed/9mo-sDMiGGc',
 		 'https://www.youtube.com/embed/2wMOxsA2Q6E',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/potato.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/potato'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -249,7 +249,7 @@ const games = [
 		 'candy-sugar-candy.png',
 		 'https://www.youtube.com/embed/Mbg_J9OrSXo',
 		 'https://www.youtube.com/embed/y_Av1WPmGnw',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/candy-sugar-candy.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/candy-sugar-candy'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -259,7 +259,7 @@ const games = [
 		 'privacy-guaranteed.png',
 		 'https://www.youtube.com/embed/n4X1G-Ofsuk',
 		 'https://www.youtube.com/embed/6qXB29KF74Y',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/privacy-guaranteed.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/privacy-guaranteed'],
 		 [],
 		 '게임 다운로드'),
 	
@@ -269,7 +269,7 @@ const games = [
 		 'redefining-miracle.png',
 		 'https://www.youtube.com/embed/xS1THKPBbjE',
 		 'https://www.youtube.com/embed/0gcI_CWK_kk',
-		 ['https://github.com/game-exhibition/2024-games/releases/download/a/redefining-miracle.zip'],
+		 ['https://kah-game-exhibition-2024.itch.io/redefining-miracle'],
 		 [],
 		 '게임 다운로드'),
 ];
