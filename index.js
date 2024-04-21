@@ -149,9 +149,9 @@ const games = [
 		 'dormitory-2.png',
 		 'https://www.youtube.com/embed/itkyap35V2E',
 		 'https://www.youtube.com/embed/Y8TXAmG_txk',
-		 ['https://kah-game-exhibition-2024.itch.io/dormitory2'],
 		 [],
-		 '게임 다운로드'),
+		 [],
+		 '스팀 출시 고려중'),
 	
 	new Game('CG Fighter 23',
 		 '김아진, 박찬이, 이은표, 최다연',
