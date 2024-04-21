@@ -110,7 +110,7 @@ const games = [
 		 'https://www.youtube.com/embed/VbyR4QYwapg',
 		 'https://www.youtube.com/embed/BpFrNGrvoY4',
 		 ['https://kah-game-exhibition-2024.itch.io/troublues-ship'],
-		 ['다운로드'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('리듬테라피',
@@ -170,7 +170,7 @@ const games = [
 		 'https://www.youtube.com/embed/hQcItLCmloM',
 		 'https://www.youtube.com/embed/j63mQSwXo1I',
 		 ['https://kah-game-exhibition-2024.itch.io/cat-village'],
-		 ['다운로드'],
+		 [],
 		 '게임 다운로드'),
 	
 	new Game('초능력자를 키우는 완벽한 방법',
